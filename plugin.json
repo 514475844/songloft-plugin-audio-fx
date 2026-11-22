@@ -1,0 +1,21 @@
+{
+  "$schema": "https://raw.githubusercontent.com/songloft-org/plugin-toolchain/main/schemas/plugin.schema.json",
+  "name": "音效工坊",
+  "version": "2026.11.22.1",
+  "description": "给正在播放的歌加混响、立体声展宽和均衡器。音效由宿主播放器统一处理，安卓与网页端通用，偏好自动记忆。",
+  "author": "514475844",
+  "homepage": "https://github.com/514475844/songloft-plugin-audio-fx",
+  "license": "Apache-2.0",
+  "icon": "icon.svg",
+  "entryPath": "audio-fx",
+  "main": "main.js",
+  "minHostVersion": "2.0.0",
+  "permissions": [
+    "storage",
+    "playlists.read"
+  ],
+  "updateUrl": "https://raw.githubusercontent.com/514475844/songloft-plugin-audio-fx/main/plugin.json",
+  "download_url": "https://github.com/514475844/songloft-plugin-audio-fx/releases/download/v2026.11.22.1/audio-fx.jsplugin.zip",
+  "entryHash": "927c7e04d65a523a9c5a1de24d6b2c415cd2e0f0df5cd3b758aad36193126e22",
+  "zipHash": "88e158d2825f4d71a1e8f36306af6382c6fa2a7f0cdcbfd25274b45628f62a43"
+}

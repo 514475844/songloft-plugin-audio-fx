@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>音效工坊</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header>
+  <h1>音效工坊</h1>
+  <div class="status"><span id="stDot" class="dot off"></span><span id="stText">检测中…</span></div>
+</header>
+
+<main>
+  <section id="sessionCard" class="card">
+    <div class="card-title">播放会话</div>
+    <p class="hint">宿主音效只作用于由本插件发起的播放。选一个歌单开始：</p>
+    <div class="row">
+      <select id="plSel"></select>
+      <button id="btnStart" class="primary">播放此歌单</button>
+    </div>
+    <div id="nowPlaying" class="now"></div>
+  </section>
+
+  <section id="fxCard" class="card disabled">
+    <div class="card-title">混响</div>
+    <div class="chips" id="chReverb">
+      <button class="chip" data-v="room">房间</button>
+      <button class="chip" data-v="hall">音乐厅</button>
+    </div>
+
+    <div class="card-title">立体声展宽</div>
+    <div class="chips" id="chWidth">
+      <button class="chip" data-v="subtle">轻微</button>
+      <button class="chip" data-v="wide">宽阔</button>
+    </div>
+
+    <div class="card-title">均衡器</div>
+    <div class="chips" id="chEq"><span class="hint">等待宿主返回可用预设…</span></div>
+
+    <p class="warn">提示：混响/展宽会自动留出增益余量，输出音量可能略降。</p>
+    <div class="row end">
+      <button id="btnClear" class="ghost">全部关闭</button>
+    </div>
+  </section>
+
+  <div id="toast"></div>
+</main>
+
+<script src="js/app.js"></script>
+</body>
+</html>

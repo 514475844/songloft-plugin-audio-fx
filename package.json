@@ -1,0 +1,16 @@
+{
+  "name": "songloft-plugin-audio-fx",
+  "version": "2026.11.22.1",
+  "description": "音效工坊：混响 / 立体声展宽 / 均衡器（宿主播放音效）",
+  "private": true,
+  "scripts": {
+    "build": "node build-local.mjs"
+  },
+  "devDependencies": {
+    "@songloft/plugin-sdk": "^2.13.8",
+    "typescript": "^5.7.0"
+  },
+  "engines": {
+    "node": ">=22.14.0"
+  }
+}
